@@ -11,11 +11,14 @@
 Today you'll be building an app for rating ramen. You will be using a local API
 and building out the frontend for our app.
 
-## Demo
+## Stock Demo
 
 Use this gif as an example of how the app should work.
 
 ![demo](https://curriculum-content.s3.amazonaws.com/phase-1/phase-1-mock-cc-ramen-rater/demo-gif.gif)
+
+# My own Demo
+![demo](https://media.giphy.com/media/vyEQ7aDsjZm1TCpJiJ/giphy.gif)
 
 ## Setup
 
