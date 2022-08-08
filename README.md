@@ -1,4 +1,4 @@
-# Phase 1 Mock Code Challenge: Ramen Rater
+# Completed Phase 1 Mock Code Challenge: Ramen Rater with Notes in the Js file.
 
 ## Learning Goals
 
