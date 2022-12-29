@@ -1,44 +1,44 @@
 {
-  "ramens": [
+  "pokemons": [
     {
       "id": 1,
-      "name": "Shoyu Ramen",
-      "restaurant": "Nonono",
-      "image": "./assets/ramen/shoyu.jpg",
+      "name": "Rayquaza",
+      "hp": 180,
+      "image": "assets/pokemon/Rayquaza.png",
       "rating": 7,
-      "comment": "Delish. Can't go wrong with a classic!"
+      "comment": "Must have this in your collection."
     },
     {
       "id": 2,
-      "name": "Naruto Ramen",
-      "restaurant": "Naruto",
-      "image": "./assets/ramen/naruto.jpg",
+      "name": "Mewtwo",
+      "hp": 170,
+      "image": "assets/pokemon/mewtwo.png",
       "rating": 10,
-      "comment": "My absolute fave!"
+      "comment": "My absolute favorite Pokemon!"
     },
     {
       "id": 3,
-      "name": "Nirvana Shiromaru",
-      "restaurant": "Ippudo",
-      "image": "./assets/ramen/nirvana.jpg",
+      "name": "Charizard",
+      "hp":250,
+      "image": "assets/pokemon/charizard.png",
       "rating": "7",
-      "comment": "Do buy the hype."
+      "comment": "Can't go wrong with a classic."
     },
     {
       "id": 4,
-      "name": "Gyukotsu Ramen",
-      "restaurant": "Za-Ya Ramen",
-      "image": "./assets/ramen/gyukotsu.jpg",
+      "name": "Lugia",
+      "hp": 280,
+      "image": "assets/pokemon/lugia.png",
       "rating": 8,
-      "comment": "Good to the last drop."
+      "comment": "Good and powerful card to have."
     },
     {
       "id": 5,
-      "name": "Kojiro Red Ramen",
-      "restaurant": "Ramen-Ya",
-      "image": "./assets/ramen/kojiro.jpg",
+      "name": "Regieleki",
+      "hp": 310,
+      "image": "assets/pokemon/regieleki.png",
       "rating": 6,
-      "comment": "Perfect for a cold night."
+      "comment": "Perfect for any battle."
     }
   ]
 }
