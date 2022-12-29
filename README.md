@@ -1,4 +1,4 @@
-# Completed Phase 1 Mock Code Challenge: pokemon Rater.
+# Pokemon Rating App.
 
 ## Learning Goals
 
