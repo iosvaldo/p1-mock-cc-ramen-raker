@@ -3,50 +3,54 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Ramen Rater</title>
+  <title>Pokemon Rating</title>
+  <link rel="shortcut icon" href="https://assets.pokemon.com/static2/_ui/img/favicon.ico">
   <link rel="stylesheet" type="text/css" href="styles.css" />
   <script defer type="text/javascript" src="./src/index.js"></script>
 </head>
 
 <body>
   <header>
-    <h3>Ramen Rater</h3>
+    <img class="pokemon__logo" src="assets/pokemon_logo_name.png" alt="pokemon logo">
+    <h1>Rating</h1>
   </header>
 
-  <!-- Ramen Menu -->
-  <div id="ramen-menu">
-    <!-- Ramen Images Here -->
+  <!-- pokemon Menu -->
+  <div id="pokemon__menu">
+    <!-- pokemon Images Here -->
   </div>
 
-  <!-- Ramen Details -->
-  <div id="ramen-detail">
-    <img class="detail-image" src="./assets/image-placeholder.jpg" alt="Insert Name Here" />
+  <!-- pokemon Details -->
+  <div id="pokemon__detail">
+    <img class="image__detail" src="assets/placeholder.png" alt="Insert Name Here" />
     <h2 class="name">Insert Name Here</h2>
-    <h3 class="restaurant">Insert Restaurant Here</h3>
+    <h2 class="hp">Insert HP Here</h2>
   </div>
 
-  <h3>Rating:</h3>
+  <h2>Rating:</h2><br/>
   <p>
-    <span id='rating-display'>Insert rating here</span> / 10
+    <em><strong>NOTE:</strong>  Ratings are based on a 1 to 10 scale. 1 is horrible. 5 is average. 10 is great.</em><br/>
+    <span id='rating__display'>??</span> / 10
   </p>
-  <h3>Comment:</h3>
-  <p id='comment-display'>
-    Insert comment here
+  <br/>
+  <h2>Comment:</h2>
+  <p id='comment__display'>
+    ??
   </p>
 
-  <!-- New Ramen Form -->
-  <form id="new-ramen">
-    <h4>Add New Ramen</h4>
-    <label for="name">Name: </label>
-    <input type="text" name="name" id="new-name" />
-    <label for="restaurant">Restaurant: </label>
-    <input type="text" name="restaurant" id="new-restaurant" />
+  <!-- New pokemon Form -->
+  <form id="new__pokemon">
+    <h4>Add New pokemon</h4>
+    <label for="name">Pokemon Name: </label>
+    <input type="text" name="name" id="new__name" />
+    <label for="hp">HP (hit points): </label>
+    <input type="text" name="hp" id="new__hp" />
     <label for="image">Image: </label>
-    <input type="text" name="image" id="new-image" />
+    <input type="text" name="image" id="new__image" />
     <label for="rating">Rating: </label>
-    <input type="number" name="rating" id="new-rating" />
-    <label for="new-comment">Comment: </label>
-    <textarea name="new-comment" id="new-comment"></textarea>
+    <input type="number" name="rating" id="new__rating" />
+    <label for="new__comment">Comment: </label>
+    <textarea name="new__comment" id="new__comment"></textarea>
     <input type="submit" value="Create" />
   </form>
 

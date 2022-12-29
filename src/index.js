@@ -1,79 +1,80 @@
 // fetch API
 
-fetch("http://localhost:3000/ramens")
-.then((res) => res.json())
-// .then((data) => console.log(data)) // this console.log can be used in the beginning just to see that the data is passing through.
-.then((data) => {
-  renderRamen(data)
-})
-  
+fetch("http://localhost:3000/pokemons")
+  .then((res) => res.json())
+  // .then((data) => console.log(data)) // this console.log can be used in the beginning just to see that the data is passing through.
+  .then((data) => {
+    renderpokemon(data);
+  });
 
 //2. Writing out the variables to use in the funtion
-let ramenMenu = document.getElementById("ramen-menu") // "ramen-menu" from the id="ramen-menu" in the index.html file...go have a look!. 
-let ramenImage = document.querySelector(".detail-image") // "detail-image" from the class="detail-image" in the index.html file...go have a look!. 
-let ramenName = document.querySelector(".name") // "name" from the class="name" in the index.html file...go have a look!.
-let ramenRestaurant = document.querySelector(".restaurant") // "restaurant" from the class="restaurant" in the index.html file...go have a look!.
-let ramenRating = document.getElementById("rating-display") // "rating-display" from the id="rating-display" in the index.html file...go have a look!.
-let ramenComment = document.getElementById("comment-display") // "comment-display" from the id="comment-display" in the index.html file...go have a look!.
+let pokemonMenu = document.getElementById("pokemon__menu"); // "pokemon__menu" from the id="pokemon__menu" in the index.html file...go have a look!.
+let pokemonImage = document.querySelector(".image__detail"); // "image__detail" from the class="image__detail" in the index.html file...go have a look!.
+let pokemonName = document.querySelector(".name"); // "name" from the class="name" in the index.html file...go have a look!.
+let pokemonHp = document.querySelector(".hp"); // "hp" from the class="hp" in the index.html file...go have a look!.
+let pokemonRating = document.getElementById("rating__display"); // "rating__display" from the id="rating__display" in the index.html file...go have a look!.
+let pokemonComment = document.getElementById("comment__display"); // "comment__display" from the id="comment__display" in the index.html file...go have a look!.
 
-//NOTE: all the variable name i've created above are all referencing the form data on the front end. It's asking us to insert those pieces of data... Go have a look and see! its asking for the following...  
-//name 
-//restaurant 
-//image 
-//rating 
+//NOTE: all the variable name i've created above are all referencing the form data on the front end. It's asking us to insert those pieces of data... Go have a look and see! its asking for the following...
+//name
+//hp
+//image
+//rating
 //comment
 
-//NOTE: Run json-server --watch db.json to see the data 
+//NOTE: Run json-server --watch db.json to see the data
 
 //{
-  //  "id": 1,
-   // "name": "Shoyu Ramen",
-   // "restaurant": "Nonono",
-   // "image": "./assets/ramen/shoyu.jpg",
-   // "rating": 7,
-  //  "comment": "Delish. Can't go wrong with a classic!"
-  //},
-
+//  "id": 1,
+// "name": " pokemon",
+// "hp": 200,
+// "image": "./assets/pokemon/image.jpg",
+// "rating": 7,
+//  "comment": "Can't go wrong with a classic!"
+//},
 
 //3. make a function, give it a name and iterate through the data
 
-function renderRamen(data){
-  for(const item of data){  // for each item in the object 
-    let image = document.createElement("img") // creat a variable name with the purpose of creating an img element for our image.. make sense ? YOU GOT THIS !!!
-    image.src = item.image
-    ramenMenu.append(image)
+function renderpokemon(data) {
+  for (const item of data) {
+    // for each item in the object
+    let image = document.createElement("img"); // creat a variable name with the purpose of creating an img element for our image.. make sense ? YOU GOT THIS !!!
+    image.className = "pokemon__card";
+    image.src = item.image;
+    pokemonMenu.append(image);
     //4. Now we need to manipulate the DOM by adding an EventListener with a click.
-    image.addEventListener("click", function(){
-      //Notice these variables names below? YES! we declared them above, now we'll use them to manipulate theose areas of our HTML Document 😅. 
-      ramenImage.src = item.image
-      ramenName.innerHTML = item.name
-      ramenRestaurant.innerHTML = item.restaurant
-      ramenRating.innerHTML = item.rating
-      ramenComment.innerHTML = item.comment
+    image.addEventListener("click", function () {
+      //Notice these variables names below? YES! we declared them above, now we'll use them to manipulate theose areas of our HTML Document 😅.
+      pokemonImage.src = item.image;
+      pokemonName.innerHTML = item.name;
+      pokemonHp.innerHTML = item.hp;
+      pokemonRating.innerHTML = item.rating;
+      pokemonComment.innerHTML = item.comment;
     });
-  } 
-  
+  }
 }
 
 //5. Now, we need to write out the form variables to
-let newRamen = document.getElementById("new-ramen") // "new-ramen" from the id="ramen-menu" in the index.html file...go have a look!. 
-let newRamenName = document.getElementById("new-name") // "new-name" from the id="new-name" from the index.html file...go have a look!.
-let newRamenRestaurant = document.getElementById("new-restaurant") //"new-restaurant" from the id="new-restaurant" from.. you guessed it!
-let newRamenImage = document.getElementById("new-image") // "new-image" from the id="new-image" from.. you guessed it!
-let newRamenRating = document.getElementById("new-rating") // "new-rating" from the id="new-rating" from.. you guessed it!
-let newRamenComment = document.getElementById("new-comment") // "new-comment" from the id="new-comment" from.. you guessed it!
+let newpokemon = document.getElementById("new__pokemon"); // "new__pokemon" from the id="pokemon__menu" in the index.html file...go have a look!.
+let newpokemonName = document.getElementById("new__name"); // "new__name" from the id="new__name" from the index.html file...go have a look!.
+let newpokemonhp = document.getElementById("new__hp"); //"new__hp" from the id="new__hp" from.. you guessed it!
+let newpokemonImage = document.getElementById("new__image"); // "new__image" from the id="new__image" from.. you guessed it!
+let newpokemonRating = document.getElementById("new__rating"); // "new__rating" from the id="new__rating" from.. you guessed it!
+let newpokemonComment = document.getElementById("new__comment"); // "new__comment" from the id="new__comment" from.. you guessed it!
 
 //6. Finally we will create a function for our form
-newRamen.addEventListener("submit", function(e){
+newpokemon.addEventListener("submit", function (e) {
   e.preventDefault();
-  let newArray = [{
-    "name": newRamenName.value,
-    "restaurant": newRamenRestaurant.value,
-    "image": newRamenImage.value,
-    "rating": newRamenRating.value,
-    "comment": newRamenComment.value,
-  }]
-  renderRamen(newArray)
-})
+  let newArray = [
+    {
+      name: newpokemonName.value,
+      hp: newpokemonhp.value,
+      image: newpokemonImage.value,
+      rating: newpokemonRating.value,
+      comment: newpokemonComment.value,
+    },
+  ];
+  renderpokemon(newArray);
+});
 
 ///END OF LINE 😅

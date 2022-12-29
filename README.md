@@ -1,4 +1,4 @@
-# Completed Phase 1 Mock Code Challenge: Ramen Rater.
+# Completed Phase 1 Mock Code Challenge: pokemon Rater.
 
 ## Learning Goals
 
@@ -8,17 +8,14 @@
 
 ## Introduction
 
-Today you'll be building an app for rating ramen. You will be using a local API
+Today you'll be building an app for rating pokemon. You will be using a local API
 and building out the frontend for our app.
 
 ## Stock Demo
 
 Use this gif as an example of how the app should work.
 
-![demo](https://curriculum-content.s3.amazonaws.com/phase-1/phase-1-mock-cc-ramen-rater/demo-gif.gif)
-
-# Walkthrough Demo
-![demo](https://media.giphy.com/media/vyEQ7aDsjZm1TCpJiJ/giphy.gif)
+![demo]
 
 ## Setup
 
@@ -32,8 +29,8 @@ Your base URL for your API will be: `http://localhost:3000`
 
 The endpoints you may need are:
 
-- GET `/ramens`
-- GET `/ramens/:id`
+- GET `/pokemons`
+- GET `/pokemons/:id`
 
 Feel free to add any additional classes or ids to any elements in the HTML file
 as you see fit.
@@ -42,16 +39,16 @@ as you see fit.
 
 As a user, I can:
 
-- See all ramen images in the `div` with the id of `ramen-menu`. When the page
-  loads, request the data from the server to get all the ramen objects. Then,
-  display the image for each of the ramen using an `img` tag inside the
-  `#ramen-menu` div.
-- Click on an image from the `#ramen-menu` div and see all the info about that
-  ramen displayed inside the `#ramen-detail` div and where it says
+- See all pokemon images in the `div` with the id of `pokemon__menu`. When the page
+  loads, request the data from the server to get all the pokemon objects. Then,
+  display the image for each of the pokemon using an `img` tag inside the
+  `#pokemon__menu` div.
+- Click on an image from the `#pokemon__menu` div and see all the info about that
+  pokemon displayed inside the `#pokemon__detail` div and where it says
   `insert comment here` and `insert rating here`.
-- Create a new ramen after submitting the `new-ramen` form. The new ramen should
-  be added to the`#ramen-menu` div. The new ramen does not need to persist; in
-  other words, if you refresh the page, it's okay that the new ramen is no
+- Create a new pokemon after submitting the `new__pokemon` form. The new pokemon should
+  be added to the`#pokemon__menu` div. The new pokemon does not need to persist; in
+  other words, if you refresh the page, it's okay that the new pokemon is no
   longer on the page.
 
 ## Advanced Deliverables
@@ -65,38 +62,38 @@ stretch your skills.
 
 As a user, I can:
 
-- See the details for the first ramen as soon as the page loads (without
+- See the details for the first pokemon as soon as the page loads (without
   clicking on an image)
-- Update the rating and comment for a ramen by submitting a form. Changes should
+- Update the rating and comment for a pokemon by submitting a form. Changes should
   be reflected on the frontend. No need to persist. You can add this HTML to the
   `index.html` file to create the edit form:
 
 ```html
-<form id="edit-ramen">
-  <h4>Update the Featured Ramen</h4>
+<form id="edit-pokemon">
+  <h4>Update the Featured pokemon</h4>
   <label for="rating">Rating: </label>
-  <input type="number" name="rating" id="new-rating" />
-  <label for="new-comment">Comment: </label>
-  <textarea name="new-comment" id="new-comment"></textarea>
+  <input type="number" name="rating" id="new__rating" />
+  <label for="new__comment">Comment: </label>
+  <textarea name="new__comment" id="new__comment"></textarea>
   <input type="submit" value="Update" />
 </form>
 ```
 
-- Delete a ramen (you can add a "delete" button if you'd like, or use an
-  existing element to handle the delete action). The ramen should be removed
-  from the `ramen-menu` div, and should not be displayed in the `ramen-detail`
+- Delete a pokemon (you can add a "delete" button if you'd like, or use an
+  existing element to handle the delete action). The pokemon should be removed
+  from the `pokemon__menu` div, and should not be displayed in the `pokemon__detail`
   div. No need to persist.
 
 ## Extra Advanced Deliverables
 
 You'll need a these endpoints for these advanced deliverables:
 
-- POST `/ramens`
-- DELETE `/ramens/:id`
-- PATCH `/ramens/:id`
+- POST `/pokemons`
+- DELETE `/pokemons/:id`
+- PATCH `/pokemons/:id`
 
 As a user, I can:
 
-- persist my updates to a ramen's rating and comment. (PATCH request)
-- persist new ramens that I create (POST request)
-- persist any ramen deletions (DELETE request)
+- persist my updates to a pokemon's rating and comment. (PATCH request)
+- persist new pokemons that I create (POST request)
+- persist any pokemon deletions (DELETE request)
