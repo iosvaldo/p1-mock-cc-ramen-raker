@@ -9,7 +9,7 @@ font-family: 'Prompt', sans-serif; */
 }
 
 body {
-  padding: 1rem;
+
   text-align: center;
   background-color: #e0dedee0;
   display: flex;
@@ -21,7 +21,7 @@ body {
 header {
   padding: 0.5rem;
   width: 80%;
-  margin:0;
+  margin-top:1em;
   border-radius: 5px;
   color: white;
   display: flex;
@@ -143,4 +143,20 @@ form h4 {
 
 #rating__display, #comment__display{
  font-size: 1.5em;
+}
+
+footer {
+  padding: 0.5rem;
+  width: 100%;
+  margin:0;
+  /* border-radius: 5px; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  background-color: #a4a4a4;
+}
+
+footer > img {
+  width:5%;
+  border-radius: 5px;
 }
