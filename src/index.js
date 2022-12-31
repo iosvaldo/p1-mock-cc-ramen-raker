@@ -8,7 +8,7 @@ fetch("http://localhost:3000/pokemons")
   });
 
 //2. Writing out the variables to use in the funtion
-let pokemonMenu = document.getElementById("pokemon__menu"); // "pokemon__menu" from the id="pokemon__menu" in the index.html file...go have a look!.
+let pokemonDisplay = document.getElementById("pokemon__display"); // "pokemon__display" from the id="pokemon__display" in the index.html file...go have a look!.
 let pokemonImage = document.querySelector(".image__detail"); // "image__detail" from the class="image__detail" in the index.html file...go have a look!.
 let pokemonName = document.querySelector(".name"); // "name" from the class="name" in the index.html file...go have a look!.
 let pokemonHp = document.querySelector(".hp"); // "hp" from the class="hp" in the index.html file...go have a look!.
@@ -41,7 +41,7 @@ function renderpokemon(data) {
     let image = document.createElement("img"); // creat a variable name with the purpose of creating an img element for our image.. make sense ? YOU GOT THIS !!!
     image.className = "pokemon__card";
     image.src = item.image;
-    pokemonMenu.append(image);
+    pokemonDisplay.append(image);
     //4. Now we need to manipulate the DOM by adding an EventListener with a click.
     image.addEventListener("click", function () {
       //Notice these variables names below? YES! we declared them above, now we'll use them to manipulate theose areas of our HTML Document 😅.
@@ -55,7 +55,7 @@ function renderpokemon(data) {
 }
 
 //5. Now, we need to write out the form variables to
-let newpokemon = document.getElementById("new__pokemon"); // "new__pokemon" from the id="pokemon__menu" in the index.html file...go have a look!.
+let newpokemon = document.getElementById("new__pokemon"); // "new__pokemon" from the id="pokemon__display" in the index.html file...go have a look!.
 let newpokemonName = document.getElementById("new__name"); // "new__name" from the id="new__name" from the index.html file...go have a look!.
 let newpokemonhp = document.getElementById("new__hp"); //"new__hp" from the id="new__hp" from.. you guessed it!
 let newpokemonImage = document.getElementById("new__image"); // "new__image" from the id="new__image" from.. you guessed it!

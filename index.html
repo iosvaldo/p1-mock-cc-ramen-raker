@@ -6,7 +6,7 @@
   <title>Pokemon Rating</title>
   <link rel="shortcut icon" href="https://assets.pokemon.com/static2/_ui/img/favicon.ico">
   <link rel="stylesheet" type="text/css" href="styles.css" />
-  <script defer type="text/javascript" src="./src/index.js"></script>
+  <script defer type="text/javascript" src="./src/main.js"></script>
 </head>
 
 <body>
@@ -15,42 +15,47 @@
     <h1>Rating</h1>
   </header>
 
-  <!-- pokemon Menu -->
-  <div id="pokemon__menu">
-    <!-- pokemon Images Here -->
+
+  <!-- 1 id-->
+  <div id="pokemon__display">
+    <!-- Display our 5 pokemon cards from out db.json file, we will create an image element using the DOM-->
   </div>
 
-  <!-- pokemon Details -->
+  <!-- main section will show our pokemon details up close -->
   <div id="pokemon__detail">
-    <img class="image__detail" src="assets/placeholder.png" alt="Insert Name Here" />
+    <!-- 2 class--> <img class="image__detail" src="assets/placeholder.png" alt="Insert Name Here" />
+    <!--3  class-->
     <h2 class="name">Insert Name Here</h2>
+    <!--4  class-->
     <h2 class="hp">Insert HP Here</h2>
   </div>
 
-  <h2>Rating:</h2><br/>
-  <p>
-    <em><strong>NOTE:</strong>  Ratings are based on a 1 to 10 scale. 1 is horrible. 5 is average. 10 is great.</em><br/>
-    <span id='rating__display'>??</span> / 10
-  </p>
-  <br/>
-  <h2>Comment:</h2>
-  <p id='comment__display'>
-    ??
-  </p>
+ 
+    <h2>Rating:</h2><br/>
+    <p><em><strong>NOTE:</strong>
+        Ratings are based on a 1 to 10 scale. 1 is horrible. 5 is average. 10 is great<em><br />
+          <!-- 5 id --><span id='rating__display'>??</span> / 10
+    </p>
+    <br/>
+    <h2>Comment:</h2>
+    <!-- 6 id -->
+    <p id='comment__display'>??</p>
+  
 
-  <!-- New pokemon Form -->
+  <!-- Adding a new pokemon Form -->
+  <!-- 7 id -->
   <form id="new__pokemon">
     <h4>Add New pokemon</h4>
     <label for="name">Pokemon Name: </label>
-    <input type="text" name="name" id="new__name" />
+    <!-- 8 id --> <input type="text" name="name" id="new__name" />
     <label for="hp">HP (hit points): </label>
-    <input type="text" name="hp" id="new__hp" />
+    <!-- 9 id --> <input type="text" name="hp" id="new__hp" />
     <label for="image">Image: </label>
-    <input type="text" name="image" id="new__image" />
+    <!-- 10 id --> <input type="text" name="image" id="new__image" />
     <label for="rating">Rating: </label>
-    <input type="number" name="rating" id="new__rating" />
+    <!-- 11 id --> <input type="number" name="rating" id="new__rating" />
     <label for="new__comment">Comment: </label>
-    <textarea name="new__comment" id="new__comment"></textarea>
+    <!-- 12 id --> <textarea name="new__comment" id="new__comment"></textarea>
     <input type="submit" value="Create" />
   </form>
   <footer>

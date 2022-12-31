@@ -39,15 +39,15 @@ as you see fit.
 
 As a user, I can:
 
-- See all pokemon images in the `div` with the id of `pokemon__menu`. When the page
+- See all pokemon images in the `div` with the id of `pokemon__display`. When the page
   loads, request the data from the server to get all the pokemon objects. Then,
   display the image for each of the pokemon using an `img` tag inside the
-  `#pokemon__menu` div.
-- Click on an image from the `#pokemon__menu` div and see all the info about that
+  `#pokemon__display` div.
+- Click on an image from the `#pokemon__display` div and see all the info about that
   pokemon displayed inside the `#pokemon__detail` div and where it says
   `insert comment here` and `insert rating here`.
 - Create a new pokemon after submitting the `new__pokemon` form. The new pokemon should
-  be added to the`#pokemon__menu` div. The new pokemon does not need to persist; in
+  be added to the`#pokemon__display` div. The new pokemon does not need to persist; in
   other words, if you refresh the page, it's okay that the new pokemon is no
   longer on the page.
 
@@ -81,7 +81,7 @@ As a user, I can:
 
 - Delete a pokemon (you can add a "delete" button if you'd like, or use an
   existing element to handle the delete action). The pokemon should be removed
-  from the `pokemon__menu` div, and should not be displayed in the `pokemon__detail`
+  from the `pokemon__display` div, and should not be displayed in the `pokemon__detail`
   div. No need to persist.
 
 ## Extra Advanced Deliverables
