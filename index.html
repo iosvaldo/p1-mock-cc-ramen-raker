@@ -11,59 +11,76 @@
 </head>
 
 <body>
-  <header>
-    <img class="pokemon__logo" src="assets/pokemon_logo_name.png" alt="pokemon logo">
-    <h1>Rating</h1>
-  </header>
+  <div class="container">
+    <header>
+      <img class="pokemon__logo" src="assets/pokemon_logo_name.png" alt="pokemon logo">
+      <h1>Rating</h1>
+    </header>
 
 
-  <!-- 1 id-->
-  <div id="pokemon__display">
-    <!-- Display our 5 pokemon cards from out db.json file, we will create an image element using the DOM-->
-  </div>
+    <!-- 1 id-->
+    <div id="pokemon__display">
+      <!-- Display our 5 pokemon cards from out db.json file, we will create an image element using the DOM-->
+    </div>
 
-  <!-- main section will show our pokemon details up close -->
-  <div id="pokemon__detail">
-    <!-- 2 class--> <img class="image__detail" src="assets/placeholder.png" alt="Insert Name Here" />
-    <!--3  class-->
-    <h2 class="name">Insert Name Here</h2>
-    <!--4  class-->
-    <h2 class="hp">Insert HP Here</h2>
-  </div>
+    <!-- main section will show our pokemon details up close -->
+    <div class="details__section">
+      <div id="pokemon__detail">
+        <div class="flip__card">
+          <div class="flip__inner">
+            <div class="flip__front">
+              <!-- 2 class--> <img class="image__detail" src="assets/placeholder.png" alt="Insert Name Here" />
+              <!--3  class-->
+            </div>
+            <div class="flip__back">
+              <img class="image__detail" src="assets/pokemon_back.png" alt="Insert Name Here" />
+              <h2 class="name">Insert Name Here</h2>
+              <!--4  class-->
+              <h2 class="hp">Insert HP Here</h2>
+            </div>
+          </div>
+        </div>
 
- 
-    <h2>Rating:</h2><br/>
-    <p><em><strong>NOTE:</strong></p></em>
-        Ratings are based on a 1 to 10 scale. 1 is horrible. 5 is average. 10 is great<br />
-          <!-- 5 id --><span id='rating__display'>??</span> / 10
-    </p>
-    <br/>
-    <h2>Comment:</h2>
-    <!-- 6 id -->
-    <p id='comment__display'>??</p>
-  
+      </div>
 
-  <!-- Adding a new pokemon Form -->
-  <!-- 7 id -->
-  <form id="new__pokemon">
+      <div class="details">
+        <h2>Rating:</h2><br />
+        <p><em><strong>NOTE:</strong></p></em>
+        Ratings are based on a 1 to 10 scale. 1 is horrible. 5 is average. 10 is great
+        <!-- 5 id -->
+        <div><span id='rating__display'>??</span> / 10</div>
+
+        </p>
+        <br />
+        <h2>Comment:</h2>
+        <!-- 6 id -->
+        <p id='comment__display'>??</p>
+      </div>
+    </div>
+    <br>
+    <hr>
+
+    <!-- Adding a new pokemon Form -->
+    <!-- 7 id -->
     <h4>Add New pokemon</h4>
-    <label for="name">Pokemon Name: </label>
-    <!-- 8 id --> <input type="text" name="name" id="new__name" />
-    <label for="hp">HP (hit points): </label>
-    <!-- 9 id --> <input type="text" name="hp" id="new__hp" />
-    <label for="image">Image: </label>
-    <!-- 10 id --> <input type="text" name="image" id="new__image" />
-    <label for="rating">Rating: </label>
-    <!-- 11 id --> <input type="number" name="rating" id="new__rating" />
-    <label for="new__comment">Comment: </label>
-    <!-- 12 id --> <textarea name="new__comment" id="new__comment"></textarea>
-    <input type="submit" value="Create" />
-  </form>
-  <footer>
-    <img class="footer__img" src="assets/pokemon-icon.jpeg" alt="pokemon logo and name">
-    <p>Copyright 2022, Pokemon Rating</p>
-  </footer>
-
+    <form id="new__pokemon">
+      <label for="name">Pokemon Name: </label>
+      <!-- 8 id --> <input type="text" name="name" id="new__name" />
+      <label for="hp">HP (hit points): </label>
+      <!-- 9 id --> <input type="text" name="hp" id="new__hp" />
+      <label for="image">Image: </label>
+      <!-- 10 id --> <input type="text" name="image" id="new__image" />
+      <label for="rating">Rating: </label>
+      <!-- 11 id --> <input type="number" name="rating" id="new__rating" />
+      <label for="new__comment">Comment: </label>
+      <!-- 12 id --> <textarea name="new__comment" id="new__comment"></textarea>
+      <input type="submit" value="Create" />
+    </form>
+    <footer>
+      <img class="footer__img" src="assets/pokemon-icon.jpeg" alt="pokemon logo and name">
+      <p>Copyright 2022, Pokemon Rating</p>
+    </footer>
+  </div>
 </body>
 
 </html>
