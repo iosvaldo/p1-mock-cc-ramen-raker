@@ -62,12 +62,6 @@ header {
   cursor: pointer;
 }
 
-/* Created in js file then Add this portion during live session */
-
-#pokemon__display img:last-child {
-  /* margin-right: 0; */
-}
-
 .pokemon__card:hover {
   transform: scale(0.9);
   box-shadow: 0px 0px 20px -3px rgb(255, 255, 255);
@@ -91,6 +85,7 @@ header {
 .name,
 .hp {
   position: absolute;
+  left: 10px;
   padding: 0.25rem 5rem 0.25rem 1rem;
   background-color: rgba(255, 255, 255, 0.848);
 }
